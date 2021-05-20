@@ -15,40 +15,36 @@ https://datausa.io/profile/geo/new-york-ny/ for New York sociodemographic data
 
 # Problem
 
-- Content production team reached out to me to see if I could help increse engagement(time spent and clicks) in the New York section of New York Times website. 
+- Content production team reached out to me to see if I could help increse engagement(time spent and pageviews) in the New York section of New York Times website. 
+- The real problem is probably that they want daily readership to increase in this section(maybe they're not adhering to their mission statement or promise to readers here) and then use it's relevant appeal to advertise to New Yorkers who are not subscribers.
 
 # Assumptions
 
 - New York Time's target audience are New Yorkers with a bachelor degree or above
 - Their audience comes from diverse backgrounds and ethnicities 
 - Their audience is interested in politics, and current events in the state and world
+- The audience values trust and quality reporting
 
 # Data Problem
 
-- What are current event topics in New York that NYT can investigate based off Open Data? 
-
-# Impact of relevant articles
-
-- Increase subscriptions 
-- Increase in daily readerships in New York section
-- Positive sentiment from readers
+- What are current event topics in New York that NYT can investigate based off Open Data sources? 
 
 # Potential Data Solutions
 
-- Identify concerning sociodemographic patterns in New york State if they do not meet expectations. Expectations are predicted by machine learning models that uses past data to determine what health costs, pollution levels, or income levels should be at a certain time based off city revenue, demographics, and policies. 
-  - Impact -> Increase in daily readerships in New York section because their readers want to know what is going on in their state
+- Identify concerning sociodemographic patterns in New york State that do not meet baseline expectations. Expectations are predicted by machine learning models that uses past data to determine what health costs, pollution levels, or income levels should be at a certain time based off city revenue, demographics, and policies. 
+  - Impact -> Increase in daily readerships in New York section because their readers have a place to learn about state issues
   - Risks -> The predictions could be wrong and investigations are costly
   - Limited -> Only given as much data as the government is willing to share
 
-- Track what issues are important to New Yorkers now and use state open data to write what is happening in those categories.  
-  - Impact -> Increase in shares on social media leading to subscriptions
-  - Risks -> Giving too much focus on certain issues and not on other important ones
+- Identify the social issues that are important to New Yorkers now and write about them using interpreations from state open data and current investigations.
+  - Impact -> Increase in pageviews for the given topic. An example was the election, many people turned to New York Times to follow the results.
+  - Risks -> Giving too much focus on certain issues and not enough on other important ones
   - Limited -> Takes time to investigate and write strong evidence based articles 
   
-- Use New York State demographic information to group and distribute content relevant to the different cultures in the New York section. 
-  - Impact -> Positive sentiment from educated readers with different backgrounds who feel included
-  - Risks -> Spreading content out making it hard to focus on core New York issues and stories
-  - Limited -> Need to hire journalists with backgrounds in these cultures
+- Use New York State demographic information to group and distribute content relevant to the different ethnicities
+  - Impact -> Positive sentiment from educated readers
+  - Risks -> Spreading content out makes it hard to focus on core New York issues and stories
+  - Limited -> Need to hire journalists with different cultural backgrounds
 
 # Action Ideas
 
@@ -57,4 +53,33 @@ https://datausa.io/profile/geo/new-york-ny/ for New York sociodemographic data
 
 # Impact Hypothesis 
 
-Increase engagement in the New York section of the NYT website by identifying the societal interests and sending journalists to investigate them.
+Increase engagement in the New York section of the NYT website by identifying societal interests and sending journalists to investigate and write about them. New Yorkers now have a place to read about state issues that affect their livelihood and society.
+
+Alternative solutions: 
+
+- Invite social New York bloggers to write on the column
+- Increase marketing campaigns on this section
+- Improve content based on features from popular NYT articles
+
+Risk of Failing:
+
+- New Yorkers are not interested in these topics
+- The cost to cover these topics is too expensive. Not worth the benefit for the cost
+- The government stops providing this data
+
+Internally & Externally Affected:
+
+- Internally, NYT needs to restructure their content in the New York column requiring teams to discontinue current content production and to focus on the new product.
+- Externally, readers might be motivated to act once they are aware of these issues. Government officials would have to adapt and figure out how to address the NYT findings. 
+
+Main Constraint: 
+
+- High budget allocation to investigate and cover so many topics. 
+
+Success Metric:
+
+Daily readership in New York Section increases by 50%. Currently daily readership in this section is low using the current content. Not sure if readers are unaware of this column so they spent most of their reading time on other ones or if this column does not have relevant news articles. 
+
+# Output
+
+The articles written should be part of a larger investigative story on a certain category. Example: Findings on why income level has not risen in the last decade
