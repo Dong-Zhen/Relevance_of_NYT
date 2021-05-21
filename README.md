@@ -1,5 +1,7 @@
 # The New York Times serves the society and readers by using great journalism to make the reader's life more rich and fulfilling and society more strong and just. 
-There's an opportunity to to make their mission statement evolve with time. They can curate relevant content to New Yorkers to improve their lives, specifically by bringing more awareness to health, education, employment, mobility, housing, and income trends. Their ethnical backgrounds are also an indicator of what type of world news they are interested in. New York State has open data of these categories over time. Using this open data, New York Times can identify patterns and bring up talking points such as why has income level not risen in the last decade and write investigative stories on it. This actually serves the society and adds weight to New York Times's mission statement in these changing times.
+There's an opportunity to to make their mission statement relevant with changing times. New York State has open data on health, education, employment, mobility, housing, ethnical backrounds, and income. Over time the data reveals trends that are concerning and needs to be addressed. Because New Yorkers do not have a full scope of how the city uses their resources, New York Times can fill in the gaps by investigating these patterns and explain why this is happening. Their investigations will serve the society and enrich the lives of their readers. 
+
+Lately, the content production team wanted to focus on increasing the time spent and page views in the New York column of the newspaper. They notice that their daily readers are reading other columns, but drop off at the New York column. A EDA of NYT's target market reviews that their audience have a bachelor degree or above and comes from diverse backgrounds. They are interested in current events of the state and world with a touch of arts and music. They value a company's promise to them and quality content.
 
 # Data Sources
 https://datausa.io/profile/geo/new-york-ny/ for New York sociodemographic data 
@@ -13,17 +15,6 @@ https://datausa.io/profile/geo/new-york-ny/ for New York sociodemographic data
 - the type of articles readers enjoy during specific times of day
 - Scrape articles with the most shares on social media by other newspapers who cover New York
 
-# Problem
-
-- Content production team reached out to me to see if I could help increse engagement(time spent and pageviews) in the New York section of New York Times website. 
-- The real problem is probably that they want daily readership to increase in this section(maybe they're not adhering to their mission statement or promise to readers here) and then use it's relevant appeal to advertise to New Yorkers who are not subscribers.
-
-# Assumptions
-
-- New York Time's target audience are New Yorkers with a bachelor degree or above
-- Their audience comes from diverse backgrounds and ethnicities 
-- Their audience is interested in politics, and current events in the state and world
-- The audience values trust and quality reporting
 
 # Data Problem
 
