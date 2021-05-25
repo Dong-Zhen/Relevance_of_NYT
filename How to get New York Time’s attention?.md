@@ -20,6 +20,9 @@ Some assumptions are made in the problem above:
 - What industry?
 - What are their ethnicities?
 
+![Educated NYS Females](https://github.com/Dong-Zhen/Relevance_of_NYT/blob/main/Tableau/Female%20Education%20LVL.jpg)
+
+
 ### Solution Path 1:
 
 Interpretive 
