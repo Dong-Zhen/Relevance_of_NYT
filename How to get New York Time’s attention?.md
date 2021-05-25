@@ -21,7 +21,10 @@ Some assumptions are made in the problem above:
 - What are their ethnicities?
 
 ![Educated NYS Females](https://github.com/Dong-Zhen/Relevance_of_NYT/blob/main/Tableau/Female%20Education%20LVL.jpg)
+![Educated NYS Males](https://github.com/Dong-Zhen/Relevance_of_NYT/blob/main/Tableau/Male%20Education%20LVL.jpg)
 
+![NYS Females Age](https://github.com/Dong-Zhen/Relevance_of_NYT/blob/main/Tableau/NYS%20Female%20Age.jpg)
+![NYS Males Age](https://github.com/Dong-Zhen/Relevance_of_NYT/blob/main/Tableau/NYS%20Male%20Age.jpg)
 
 ### Solution Path 1:
 
