@@ -13,7 +13,7 @@ Some assumptions are made in the problem above:
 
 ### Preliminary Analysis: 
 
-- What educated are New Yorkers?
+- How educated are New Yorkers?
 - What are the age groups of New Yorkers?
 - What are their income levels?
 - Employed or unemployed?
@@ -23,8 +23,12 @@ Some assumptions are made in the problem above:
 ![Educated NYS Females](https://github.com/Dong-Zhen/Relevance_of_NYT/blob/main/Tableau/Female%20Education%20LVL.jpg)
 ![Educated NYS Males](https://github.com/Dong-Zhen/Relevance_of_NYT/blob/main/Tableau/Male%20Education%20LVL.jpg)
 
+There is a large market of educated Females and Males in New York State.
+
 ![NYS Females Age](https://github.com/Dong-Zhen/Relevance_of_NYT/blob/main/Tableau/NYS%20Female%20Age.jpg)
 ![NYS Males Age](https://github.com/Dong-Zhen/Relevance_of_NYT/blob/main/Tableau/NYS%20Male%20Age.jpg)
+
+Many New Yorkers are within the ages of 18-60.  
 
 ### Solution Path 1:
 
