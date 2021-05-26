@@ -1,17 +1,20 @@
-# According to the U.S. Census, New York has a total population of  20,201,249. The New York Times has 5.26 million paid subscribers in the first quarter of 2021 according to statista.com. Only a small percentage of New York’s total population is subscribed to the New York Times. How can the New York Times increase their number of New York subscribers? 
+# According to the U.S. Census, New York has a total population of  20,201,249. The New York Times has 5.26 million paid subscribers in the first quarter of 2021 according to statista.com. Only a small percentage of New York’s total population is subscribed to the New York Times. How can the New York Times increase their number of New York readers? 
 
-Some assumptions are made in the problem above: 
+While I do not know how many New Yorkers are subscribed to the New York Times, I do know that the New York Times has a New York column that targets New Yorkers. New York is known for its diverse population consisting of many different ethnic groups with varying income and education levels. I can help New York Times better understand the New York market so that they can personalized outreach campaigns to their intended market and increase readership. 
 
-- I do not actually know how many New Yorkers are subscribed to the New York Times 
-- I do know that the New York Times has a New York column that targets New Yorkers
-- I can help the New York Times better understand the New York market so they can personalized outreach campaigns to their intended market and increase readership
+### Impact Hypothesis: By understanding the demographic, social, housing, and economic characteristics of New Yorkers, the New York Times can implement personalized outreach campaigns to target groups who are likely to subscribe in order to increase readership in the New York column.
 
-### Impact Hypothesis: By understanding the demographic, social, housing, and economic characteristics of New Yorkers, the New York Times can implement personalized outreach campaigns to segmented groups in order to increase the New York column readership.
+The campaign is a success when the number of page views in the New York column is increased by 20% in four months.
+The long term success measure is the New York column hitting a million daily readers
+
+Constraints: Unable to target individuals of these groups directly. Need to target by location or through medias that cater to these groups. 
+NYT Actions: Advertise to groups with higher likelihood of subscribing, Personalized emails to current subscribers, Produce and share relevant content to target groups
 
 ### Dataset: Location, Income, Industry, Age, Ethnicity, Education Data from American Community Survey 5-Year (2009-2019)
 
-
 ### Preliminary Analysis: 
+
+Goal: Explore the dataset to understand how diverse New York is and the potential target markets by gender, income, education, industry. These features could be key indicators of who is likely to subscribe.
 
 - How educated are New Yorkers?
 - What are the age groups of New Yorkers?
