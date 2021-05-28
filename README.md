@@ -1,76 +1,56 @@
-# The New York Times serves the society and readers by using great journalism to make the reader's life more rich and fulfilling and society more strong and just. 
-There's an opportunity to increase daily readership of the New York column by make their mission statement relevant with changing times. New York State has open data on health, education, employment, mobility, housing, ethnical backrounds, and income. Over time the data reveals trends that are concerning and needs to be addressed. Because New Yorkers do not have a full scope of how the city uses their resources, New York Times can fill in the gaps by investigating these patterns and explain why this is happening. Their investigations will serve the society and enrich the lives of their readers. 
+# Abstract
 
-Lately, the content production team wanted to focus on increasing the time spent and page views in the New York column of the newspaper. They notice that their daily readers are reading other columns, but drop off at the New York column. A EDA of NYT's target market reviews that their audience have a bachelor degree or above and comes from diverse backgrounds. They are interested in current events of the state and world with a touch of arts and music. They value a company's promise to them and quality content. I make the assumption that their readers are curious about state affairs that impact their daily lives. 
-
-# Data Sources
-https://datausa.io/profile/geo/new-york-ny/ for New York sociodemographic data 
-
-----Below are data that I would look for if I was working for New York Times ----- 
-- the most common topics in the New York Section 
-- The engagement rates in the different sections of the website
-- which type of articles subscribers read the most
-- Articles that lead to a subscription
-- Where readers are located.
-- the type of articles readers enjoy during specific times of day
-- Scrape articles with the most shares on social media by other newspapers who cover New York
+New York Times is a highly circulated American newspaper, 18th in the world and 3rd in the US, that focuses on delivering content that enriches their reader's lives and to make society more strong and just. Since focusing on their digital platform, there has been a drop in their print circulation especially in New York. There's an opportunity for them to attract New Yorkers to the digital version of their newspaper. By reaching out to New Yorkers, they can increase the daily readership of the New York column and improve page view and engagement metrics. Before New York Times can reach out, they have to understand the New York population. After analyzing data from the 5 year American Community Survey for 2009 - 2019, I learned that the majority of New York adults' education backgrounds fit New York Time's target market. However, the state is diverse in age, location, industry, and ethnicity, which requires New York Times to think about who to target. As a data scientist I can apply logistic regression on Census and subscriber data to help New York Times find out who is likely to be a subscriber and who is not. Through this model, the New York Times can come up with relevant marketing campaigns to target likely subscribers.
 
 
-# Data Problem
+## Design
 
-- What are current event topics in New York that NYT can investigate based off Open Data sources? 
+Impact Hypothesis: By understanding the demographics and social characteristics of New Yorkers 25 and older, the New York Times can implement personalized outreach campaigns to target groups who are likely to subscribe in order to increase readership in the New York column.
 
-# Potential Data Solutions
+Additional Impacts:
 
-- Identify concerning sociodemographic patterns in New york State that do not meet baseline expectations. Expectations are predicted by machine learning models that uses past data to determine what health costs, pollution levels, or income levels should be at a certain time based off city revenue, demographics, and policies. 
-  - Impact -> Increase in daily readerships in New York section because their readers have a place to learn about state issues
-  - Risks -> The predictions could be wrong and investigations are costly
-  - Limited -> Only given as much data as the government is willing to share
+- Readers read other columns as well, increasing the columns' engagement metrics
+- Increase in subscribers 
+- Advertisers pay more to reach specific groups
 
-- Identify the social issues that are important to New Yorkers now and write about them using interpreations from state open data and current investigations.
-  - Impact -> Increase in pageviews for the given topic. An example was the election, many people turned to New York Times to follow the results.
-  - Risks -> Giving too much focus on certain issues and not enough on other important ones
-  - Limited -> Takes time to investigate and write strong evidence based articles 
-  
-- Use New York State demographic information to group and distribute content relevant to the different ethnicities
-  - Impact -> Positive sentiment from educated readers
-  - Risks -> Spreading content out makes it hard to focus on core New York issues and stories
-  - Limited -> Need to hire journalists with different cultural backgrounds
+Ways the Hypothesis Could Fail: 
 
-# Action Ideas
+- New Yorkers are not interested in the New York column's content
+- Likely to subscribe does not equal higher readership, target group might subscribe to other newspapers as well
 
-- Send journalists to investigate New York City Open Data sociodemographic categories
-- Add more content based off New York's ethnic groups
+Solution Path: Build a logistic regression model trained on New York Time's subscriber data and then test on Census demographic information to identify Which New Yorkers are likely to be subscribers and who is not.
 
-# Impact Hypothesis 
+The model should be deployed the next quarter to see if it helped add more New York subscribers than the previous quarter. 
 
-Increase engagement in the New York section of the NYT website by identifying societal interests and sending journalists to investigate and write about them. New Yorkers now have a place to read about state issues that affect their livelihood and society.
+Acceptable Risks: 
 
-Alternative solutions: 
+- If the model classifies a likely subscriber as an unlikely subscriber 5% of the time. This can be mitigated by looking into why it is predicting wrong for this 5%, maybe there was a missing feature.
+- If the model classifies an unlikey subscriber as a likely subscriber 5% of the time. 
 
-- Invite social New York bloggers to write on the column
-- Increase marketing campaigns on this section
-- Improve content based on features from popular NYT articles
+Alternative Solution: Use clustering to learn more about New York's subscriber group.
 
-Risk of Failing:
+There are some ethical issues that can occur. If the model identifies likely subscribers based on high income and education, then there is a design bias. This can be mitigated by looking into features of readers who are interested in the content. There's the issue of consent, do subscribers know their data is being used to identify other likely subscribers?
 
-- New Yorkers are not interested in these topics
-- The cost to cover these topics is too expensive. Not worth the benefit for the cost
-- The government stops providing this data
+Once New York Times has this model, they can decide on how and where to reach out to likely subscribers. Depending on budget, they could advertise through social medias or radio stations with messaging that entices their target groups.
 
-Internally & Externally Affected:
+## Data
 
-- Internally, NYT needs to restructure their content in the New York column requiring teams to discontinue current content production and to focus on the new product.
-- Externally, readers might be motivated to act once they are aware of these issues. Government officials would have to adapt and figure out how to address the NYT findings. 
+The 5 year American Community Survey 2009 - 2019 was used to get precise demographic estimates of New York's demographics. I used age, gender, income, occuptation, education, ethnicity, and location data. After examining the distribution of each characteristic, I found some interesting insights.
 
-Main Constraint: 
+-New York's labor force is made up of 50% of its population with the majority in civilian labor and less than one percent in the armed forces.						
+-The education health, social services, administrative, science, retail, and financial services roles make up more than 52% of the workforce.						
+-Non white races represent 40.6% of New York's population, making it more diverse than the USA's average of 23.7%.						
+-New Yorkers 25 and older make up more than 97% of income earners.						
 
-- High budget allocation to investigate and cover so many topics. 
+From there, I created three major adult age groups based on the Milennial, X, and Boomer generations. Noticeably, there are more Milennials with higher educations than the other groups. Gen X captures the highest shares of income over 75 thousand. The are 559,484 more females than males in the Boomer group. 
 
-Success Metric:
+## Alogirthms
 
-Daily readership in New York Section increases by 50%. Currently daily readership in this section is low using the current content. Not sure if readers are unaware of this column so they spent most of their reading time on other ones or if this column does not have relevant news articles. 
+I used aggregate functions, vlookups, and pivot tables to clean and explore my data on excel. 
 
-# Output
+## Tools
 
-The articles written should be part of a larger investigative story on a certain category. Example: Findings on why income level has not risen in the last decade
+I used Python to scrape location data and to call the Census Api. Excel to clean, manipulate, and perform analysis on the data. Tableau to visualize and map the data. 
+
+## Communication
+
