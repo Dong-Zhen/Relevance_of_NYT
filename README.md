@@ -54,3 +54,7 @@ I used Python to scrape location data and to call the Census Api. Excel to clean
 
 ## Communication
 
+## Links
+
+[Write up](https://github.com/Dong-Zhen/Relevance_of_NYT/edit/main/README.md)
+[Census Analysis on Google Sheets](https://docs.google.com/spreadsheets/d/1sxYRCKuNiGMVjmg1CprcZR_FmU6XC8IkZECXanqWy3o/edit?usp=sharing)
