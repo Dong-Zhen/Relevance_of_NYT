@@ -39,10 +39,10 @@ Once New York Times has this model, they can decide on how and where to reach ou
 
 The 5 year American Community Survey 2009 - 2019 was used to get precise demographic estimates of New York's demographics. I used age, gender, income, occuptation, education, ethnicity, and location data. After examining the distribution of each characteristic, I found some interesting insights.
 
--New York's labor force is made up of 50% of its population with the majority in civilian labor and less than one percent in the armed forces.						
--The education health, social services, administrative, science, retail, and financial services roles make up more than 52% of the workforce.						
--Non white races represent 40.6% of New York's population, making it more diverse than the USA's average of 23.7%.						
--New Yorkers 25 and older make up more than 97% of income earners.						
+- New York's labor force is made up of 50% of its population with the majority in civilian labor and less than one percent in the armed forces.						
+- The education health, social services, administrative, science, retail, and financial services roles make up more than 52% of the workforce.						
+- Non white races represent 40.6% of New York's population, making it more diverse than the USA's average of 23.7%.						
+- New Yorkers 25 and older make up more than 97% of income earners.						
 
 From there, I created three major adult age groups based on the Milennial, X, and Boomer generations. Noticeably, there are more Milennials with higher educations than the other groups. Gen X captures the highest shares of income over 75 thousand. The are 559,484 more females than males in the Boomer group. 
 
