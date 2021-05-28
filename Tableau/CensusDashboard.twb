@@ -1,0 +1,3271 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0507.1603                               -->
+<workbook original-version='18.1' source-build='2021.1.0 (20211.21.0507.1603)' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://prod-useast-b.online.tableau.com/t/dmz/workbooks/NYTProject528955?rev=1.0' id='NYTProject528955' path='/t/dmz/workbooks' revision='1.1' site='dmz' />
+  <preferences />
+  <datasources>
+    <datasource caption='EducationByAge+ (CensusAgeGroup)' inline='true' name='federated.0zblxle1kq9w7y1701dhm17c72jd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='CensusAgeGroup' name='excel-direct.1vz9ttb1a7u1k31fz30ns14zsuan'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Cortana/AppData/Local/Temp/TableauTemp/16pw88u16c5dlx1fw93oh0bx2cvq/Data/1x9cpn30deo20g1djujdh11p2dy5/CensusAgeGroup.xlsx' interpretationMode='0' validate='no' />
+          </named-connection>
+          <named-connection caption='Census Data(2)' name='excel-direct.14sldti18elgpx164igl1022vvzj'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Cortana/Downloads/Census Data(2).xlsx' interpretationMode='0' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1vz9ttb1a7u1k31fz30ns14zsuan' name='EducationByAge' table='[EducationByAge$]' type='table'>
+          <columns gridOrigin='A1:N10001:no:A1:N10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Zipcode' ordinal='0' />
+            <column datatype='string' name='City' ordinal='1' />
+            <column datatype='string' name='County' ordinal='2' />
+            <column datatype='string' name='Gender' ordinal='3' />
+            <column datatype='string' name='Age' ordinal='4' />
+            <column datatype='integer' name='Less than 9th grade' ordinal='5' />
+            <column datatype='integer' name='9th to 12th grade, no diploma' ordinal='6' />
+            <column datatype='integer' name='High school graduate' ordinal='7' />
+            <column datatype='integer' name='Some college, no degree' ordinal='8' />
+            <column datatype='integer' name='Associate&apos;s degree' ordinal='9' />
+            <column datatype='integer' name='Bachelor&apos;s degree' ordinal='10' />
+            <column datatype='integer' name='Graduate or professional degree' ordinal='11' />
+            <column datatype='integer' name='Bachelor&apos;s and Higher' ordinal='12' />
+            <column datatype='integer' name='Population' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.1vz9ttb1a7u1k31fz30ns14zsuan' name='EducationByAge' table='[EducationByAge$]' type='table'>
+            <columns gridOrigin='A1:N10001:no:A1:N10001:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Zipcode' ordinal='0' />
+              <column datatype='string' name='City' ordinal='1' />
+              <column datatype='string' name='County' ordinal='2' />
+              <column datatype='string' name='Gender' ordinal='3' />
+              <column datatype='string' name='Age' ordinal='4' />
+              <column datatype='integer' name='Less than 9th grade' ordinal='5' />
+              <column datatype='integer' name='9th to 12th grade, no diploma' ordinal='6' />
+              <column datatype='integer' name='High school graduate' ordinal='7' />
+              <column datatype='integer' name='Some college, no degree' ordinal='8' />
+              <column datatype='integer' name='Associate&apos;s degree' ordinal='9' />
+              <column datatype='integer' name='Bachelor&apos;s degree' ordinal='10' />
+              <column datatype='integer' name='Graduate or professional degree' ordinal='11' />
+              <column datatype='integer' name='Bachelor&apos;s and Higher' ordinal='12' />
+              <column datatype='integer' name='Population' ordinal='13' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1vz9ttb1a7u1k31fz30ns14zsuan' name='IncomeByAge' table='[IncomeByAge$]' type='table'>
+            <columns gridOrigin='A1:T7177:no:A1:T7177:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Zipcode' ordinal='0' />
+              <column datatype='string' name='City' ordinal='1' />
+              <column datatype='string' name='County' ordinal='2' />
+              <column datatype='string' name='Age' ordinal='3' />
+              <column datatype='integer' name='$0 - $10,000' ordinal='4' />
+              <column datatype='integer' name='$10,000 - $14,999' ordinal='5' />
+              <column datatype='integer' name='$15,000 - $19,999' ordinal='6' />
+              <column datatype='integer' name='$20,000 - $24,999' ordinal='7' />
+              <column datatype='integer' name='$25,000 - $29,999' ordinal='8' />
+              <column datatype='integer' name='$30,000 - $34,999' ordinal='9' />
+              <column datatype='integer' name='$35,000 - $39,999' ordinal='10' />
+              <column datatype='integer' name='$40,000 - $44,999' ordinal='11' />
+              <column datatype='integer' name='$45,000 - $49,999' ordinal='12' />
+              <column datatype='integer' name='$50,000 - $59,999' ordinal='13' />
+              <column datatype='integer' name='$60,000 - $74,999' ordinal='14' />
+              <column datatype='integer' name='$75,000 - $99,999' ordinal='15' />
+              <column datatype='integer' name='$100,000 - $124,999' ordinal='16' />
+              <column datatype='integer' name='$125,000 - $149,999' ordinal='17' />
+              <column datatype='integer' name='$150,000 - $199,999' ordinal='18' />
+              <column datatype='integer' name='$200,000 or more' ordinal='19' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1vz9ttb1a7u1k31fz30ns14zsuan' name='Industry' table='[Industry$]' type='table'>
+            <columns gridOrigin='A1:P1795:no:A1:P1795:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Zipcode' ordinal='0' />
+              <column datatype='string' name='City' ordinal='1' />
+              <column datatype='string' name='County' ordinal='2' />
+              <column datatype='integer' name='Agriculture_forestry_fishing_hunting_mining' ordinal='3' />
+              <column datatype='integer' name='Construction' ordinal='4' />
+              <column datatype='integer' name='Manufacturing' ordinal='5' />
+              <column datatype='integer' name='Wholesale' ordinal='6' />
+              <column datatype='integer' name='Retail' ordinal='7' />
+              <column datatype='integer' name='Transportation_Warehousing_Utilities' ordinal='8' />
+              <column datatype='integer' name='Information' ordinal='9' />
+              <column datatype='integer' name='Financial Services' ordinal='10' />
+              <column datatype='integer' name='Admin_Science_Professional Roles' ordinal='11' />
+              <column datatype='integer' name='Education_Health_Social Services' ordinal='12' />
+              <column datatype='integer' name='Entertainment_Arts_Food Services' ordinal='13' />
+              <column datatype='integer' name='Public Admin' ordinal='14' />
+              <column datatype='integer' name='Armed Forces' ordinal='15' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1vz9ttb1a7u1k31fz30ns14zsuan' name='Race' table='[Race$]' type='table'>
+            <columns gridOrigin='A1:J1795:no:A1:J1795:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Zipcode' ordinal='0' />
+              <column datatype='string' name='City' ordinal='1' />
+              <column datatype='string' name='County' ordinal='2' />
+              <column datatype='integer' name='Total Pop' ordinal='3' />
+              <column datatype='integer' name='White' ordinal='4' />
+              <column datatype='integer' name='African American' ordinal='5' />
+              <column datatype='integer' name='Native American' ordinal='6' />
+              <column datatype='integer' name='Asian' ordinal='7' />
+              <column datatype='integer' name='Pacific Islander' ordinal='8' />
+              <column datatype='integer' name='Hispanic or Latino' ordinal='9' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[$0 - $10,000]' value='[IncomeByAge].[$0 - $10,000]' />
+          <map key='[$10,000 - $14,999]' value='[IncomeByAge].[$10,000 - $14,999]' />
+          <map key='[$100,000 - $124,999]' value='[IncomeByAge].[$100,000 - $124,999]' />
+          <map key='[$125,000 - $149,999]' value='[IncomeByAge].[$125,000 - $149,999]' />
+          <map key='[$15,000 - $19,999]' value='[IncomeByAge].[$15,000 - $19,999]' />
+          <map key='[$150,000 - $199,999]' value='[IncomeByAge].[$150,000 - $199,999]' />
+          <map key='[$20,000 - $24,999]' value='[IncomeByAge].[$20,000 - $24,999]' />
+          <map key='[$200,000 or more]' value='[IncomeByAge].[$200,000 or more]' />
+          <map key='[$25,000 - $29,999]' value='[IncomeByAge].[$25,000 - $29,999]' />
+          <map key='[$30,000 - $34,999]' value='[IncomeByAge].[$30,000 - $34,999]' />
+          <map key='[$35,000 - $39,999]' value='[IncomeByAge].[$35,000 - $39,999]' />
+          <map key='[$40,000 - $44,999]' value='[IncomeByAge].[$40,000 - $44,999]' />
+          <map key='[$45,000 - $49,999]' value='[IncomeByAge].[$45,000 - $49,999]' />
+          <map key='[$50,000 - $59,999]' value='[IncomeByAge].[$50,000 - $59,999]' />
+          <map key='[$60,000 - $74,999]' value='[IncomeByAge].[$60,000 - $74,999]' />
+          <map key='[$75,000 - $99,999]' value='[IncomeByAge].[$75,000 - $99,999]' />
+          <map key='[9th to 12th grade, no diploma]' value='[EducationByAge].[9th to 12th grade, no diploma]' />
+          <map key='[Admin_Science_Professional Roles]' value='[Industry].[Admin_Science_Professional Roles]' />
+          <map key='[African American]' value='[Race].[African American]' />
+          <map key='[Age (IncomeByAge)]' value='[IncomeByAge].[Age]' />
+          <map key='[Age]' value='[EducationByAge].[Age]' />
+          <map key='[Agriculture_forestry_fishing_hunting_mining]' value='[Industry].[Agriculture_forestry_fishing_hunting_mining]' />
+          <map key='[Armed Forces]' value='[Industry].[Armed Forces]' />
+          <map key='[Asian]' value='[Race].[Asian]' />
+          <map key='[Associate&apos;s degree]' value='[EducationByAge].[Associate&apos;s degree]' />
+          <map key='[Bachelor&apos;s and Higher]' value='[EducationByAge].[Bachelor&apos;s and Higher]' />
+          <map key='[Bachelor&apos;s degree]' value='[EducationByAge].[Bachelor&apos;s degree]' />
+          <map key='[City (IncomeByAge)]' value='[IncomeByAge].[City]' />
+          <map key='[City (Industry)]' value='[Industry].[City]' />
+          <map key='[City (Race)]' value='[Race].[City]' />
+          <map key='[City]' value='[EducationByAge].[City]' />
+          <map key='[Construction]' value='[Industry].[Construction]' />
+          <map key='[County (IncomeByAge)]' value='[IncomeByAge].[County]' />
+          <map key='[County (Industry)]' value='[Industry].[County]' />
+          <map key='[County (Race)]' value='[Race].[County]' />
+          <map key='[County]' value='[EducationByAge].[County]' />
+          <map key='[Education_Health_Social Services]' value='[Industry].[Education_Health_Social Services]' />
+          <map key='[Entertainment_Arts_Food Services]' value='[Industry].[Entertainment_Arts_Food Services]' />
+          <map key='[Financial Services]' value='[Industry].[Financial Services]' />
+          <map key='[Gender]' value='[EducationByAge].[Gender]' />
+          <map key='[Graduate or professional degree]' value='[EducationByAge].[Graduate or professional degree]' />
+          <map key='[High school graduate]' value='[EducationByAge].[High school graduate]' />
+          <map key='[Hispanic or Latino]' value='[Race].[Hispanic or Latino]' />
+          <map key='[Information]' value='[Industry].[Information]' />
+          <map key='[Less than 9th grade]' value='[EducationByAge].[Less than 9th grade]' />
+          <map key='[Manufacturing]' value='[Industry].[Manufacturing]' />
+          <map key='[Native American]' value='[Race].[Native American]' />
+          <map key='[Pacific Islander]' value='[Race].[Pacific Islander]' />
+          <map key='[Population]' value='[EducationByAge].[Population]' />
+          <map key='[Public Admin]' value='[Industry].[Public Admin]' />
+          <map key='[Retail]' value='[Industry].[Retail]' />
+          <map key='[Some college, no degree]' value='[EducationByAge].[Some college, no degree]' />
+          <map key='[Total Pop]' value='[Race].[Total Pop]' />
+          <map key='[Transportation_Warehousing_Utilities]' value='[Industry].[Transportation_Warehousing_Utilities]' />
+          <map key='[White]' value='[Race].[White]' />
+          <map key='[Wholesale]' value='[Industry].[Wholesale]' />
+          <map key='[Zipcode (IncomeByAge)]' value='[IncomeByAge].[Zipcode]' />
+          <map key='[Zipcode (Industry)]' value='[Industry].[Zipcode]' />
+          <map key='[Zipcode (Race)]' value='[Race].[Zipcode]' />
+          <map key='[Zipcode]' value='[EducationByAge].[Zipcode]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N10001:no:A1:N10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T7177:no:A1:T7177:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P1795:no:A1:P1795:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Race]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J1795:no:A1:J1795:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode]</local-name>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias>Zipcode</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Less than 9th grade</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Less than 9th grade]</local-name>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias>Less than 9th grade</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>9th to 12th grade, no diploma</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[9th to 12th grade, no diploma]</local-name>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias>9th to 12th grade, no diploma</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High school graduate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[High school graduate]</local-name>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias>High school graduate</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Some college, no degree</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Some college, no degree]</local-name>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias>Some college, no degree</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Associate&apos;s degree</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Associate&apos;s degree]</local-name>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias>Associate&apos;s degree</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bachelor&apos;s degree</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bachelor&apos;s degree]</local-name>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias>Bachelor&apos;s degree</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Graduate or professional degree</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Graduate or professional degree]</local-name>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias>Graduate or professional degree</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bachelor&apos;s and Higher</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bachelor&apos;s and Higher]</local-name>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias>Bachelor&apos;s and Higher</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[EducationByAge]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode (IncomeByAge)]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>Zipcode</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City (IncomeByAge)]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County (IncomeByAge)]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Age (IncomeByAge)]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$0 - $10,000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$0 - $10,000]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$0 - $10,000</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$10,000 - $14,999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$10,000 - $14,999]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$10,000 - $14,999</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$15,000 - $19,999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$15,000 - $19,999]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$15,000 - $19,999</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$20,000 - $24,999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$20,000 - $24,999]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$20,000 - $24,999</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$25,000 - $29,999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$25,000 - $29,999]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$25,000 - $29,999</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$30,000 - $34,999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$30,000 - $34,999]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$30,000 - $34,999</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$35,000 - $39,999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$35,000 - $39,999]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$35,000 - $39,999</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$40,000 - $44,999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$40,000 - $44,999]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$40,000 - $44,999</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$45,000 - $49,999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$45,000 - $49,999]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$45,000 - $49,999</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$50,000 - $59,999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$50,000 - $59,999]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$50,000 - $59,999</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$60,000 - $74,999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$60,000 - $74,999]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$60,000 - $74,999</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$75,000 - $99,999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$75,000 - $99,999]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$75,000 - $99,999</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$100,000 - $124,999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$100,000 - $124,999]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$100,000 - $124,999</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$125,000 - $149,999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$125,000 - $149,999]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$125,000 - $149,999</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$150,000 - $199,999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$150,000 - $199,999]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$150,000 - $199,999</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>$200,000 or more</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[$200,000 or more]</local-name>
+            <parent-name>[IncomeByAge]</parent-name>
+            <remote-alias>$200,000 or more</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode (Industry)]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>Zipcode</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City (Industry)]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County (Industry)]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Agriculture_forestry_fishing_hunting_mining</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Agriculture_forestry_fishing_hunting_mining]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>Agriculture_forestry_fishing_hunting_mining</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Construction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Construction]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>Construction</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Manufacturing</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Manufacturing]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>Manufacturing</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wholesale</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wholesale]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>Wholesale</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Retail</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Retail]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>Retail</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transportation_Warehousing_Utilities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Transportation_Warehousing_Utilities]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>Transportation_Warehousing_Utilities</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Information</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Information]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>Information</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Financial Services</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Financial Services]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>Financial Services</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Admin_Science_Professional Roles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Admin_Science_Professional Roles]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>Admin_Science_Professional Roles</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education_Health_Social Services</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Education_Health_Social Services]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>Education_Health_Social Services</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entertainment_Arts_Food Services</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Entertainment_Arts_Food Services]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>Entertainment_Arts_Food Services</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Public Admin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Public Admin]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>Public Admin</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Armed Forces</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Armed Forces]</local-name>
+            <parent-name>[Industry]</parent-name>
+            <remote-alias>Armed Forces</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode (Race)]</local-name>
+            <parent-name>[Race]</parent-name>
+            <remote-alias>Zipcode</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City (Race)]</local-name>
+            <parent-name>[Race]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County (Race)]</local-name>
+            <parent-name>[Race]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Pop</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Pop]</local-name>
+            <parent-name>[Race]</parent-name>
+            <remote-alias>Total Pop</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>White</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[White]</local-name>
+            <parent-name>[Race]</parent-name>
+            <remote-alias>White</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>African American</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[African American]</local-name>
+            <parent-name>[Race]</parent-name>
+            <remote-alias>African American</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Native American</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Native American]</local-name>
+            <parent-name>[Race]</parent-name>
+            <remote-alias>Native American</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Asian</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Asian]</local-name>
+            <parent-name>[Race]</parent-name>
+            <remote-alias>Asian</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pacific Islander</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pacific Islander]</local-name>
+            <parent-name>[Race]</parent-name>
+            <remote-alias>Pacific Islander</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hispanic or Latino</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hispanic or Latino]</local-name>
+            <parent-name>[Race]</parent-name>
+            <remote-alias>Hispanic or Latino</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='$200,000 Or More' datatype='integer' name='[$200,000 or more]' role='measure' type='quantitative' />
+      <column caption='9Th To 12Th Grade, No Diploma' datatype='integer' name='[9th to 12th grade, no diploma]' role='measure' type='quantitative' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Bachelor&apos;s and Higher:qk]&quot;' value='BA/BS+' />
+          <alias key='&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783346864311:qk]&quot;' value='No Higher Ed.' />
+          <alias key='&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783347237048:qk]&quot;' value='AA/AS or Some College' />
+          <alias key='&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350137017:qk]&quot;' value='Low' />
+          <alias key='&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350526138:qk]&quot;' value='Low Middle ' />
+          <alias key='&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351025851:qk]&quot;' value='High Middle' />
+          <alias key='&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351345341:qk]&quot;' value='High' />
+        </aliases>
+      </column>
+      <column caption='Admin Science Professional Roles' datatype='integer' name='[Admin_Science_Professional Roles]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Age (IncomeByAge)]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;65 and over&quot;' value='65+' />
+          <alias key='&quot;Under 25&quot;' value='&gt;25' />
+        </aliases>
+      </column>
+      <column datatype='string' name='[Age]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;65 and over&quot;' value='65+' />
+        </aliases>
+      </column>
+      <column caption='Agriculture forestry fishing hunting mining' datatype='integer' name='[Agriculture_forestry_fishing_hunting_mining]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Bachelor&apos;s and Higher]' role='measure' type='quantitative' />
+      <column caption='No Higher Education' datatype='integer' name='[Calculation_1982709783346864311]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[9th to 12th grade, no diploma] + [High school graduate] + [Less than 9th grade]' />
+      </column>
+      <column caption='Associate&apos;s and Some College' datatype='integer' name='[Calculation_1982709783347237048]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Some college, no degree] + [Associate&apos;s degree]' />
+      </column>
+      <column caption='Low Income' datatype='integer' name='[Calculation_1982709783350137017]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[$0 - $10,000] + [$10,000 - $14,999] + [$15,000 - $19,999] + [$20,000 - $24,999] + [$25,000 - $29,999] + [$30,000 - $34,999] + [$35,000 - $39,999]' />
+      </column>
+      <column caption='Low Middle Income' datatype='integer' name='[Calculation_1982709783350526138]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[$40,000 - $44,999] + [$45,000 - $49,999] + [$50,000 - $59,999] + [$60,000 - $74,999]' />
+      </column>
+      <column caption='High Middle Income' datatype='integer' name='[Calculation_1982709783351025851]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[$75,000 - $99,999] + [$100,000 - $124,999]' />
+      </column>
+      <column caption='High Income' datatype='integer' name='[Calculation_1982709783351345341]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[$125,000 - $149,999] + [$150,000 - $199,999] + [$200,000 or more]' />
+      </column>
+      <column caption='Higher Education' datatype='integer' name='[Calculation_666532792301727744]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Bachelor&apos;s and Higher]+[Calculation_1982709783347237048])' />
+      </column>
+      <column datatype='string' name='[City (IncomeByAge)]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[City (Industry)]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[City (Race)]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[County (IncomeByAge)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County (Industry)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County (Race)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Education Health Social Services' datatype='integer' name='[Education_Health_Social Services]' role='measure' type='quantitative' />
+      <column caption='Entertainment Arts Food Services' datatype='integer' name='[Entertainment_Arts_Food Services]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column caption='Transportation Warehousing Utilities' datatype='integer' name='[Transportation_Warehousing_Utilities]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode (IncomeByAge)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode (Industry)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode (Race)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='EducationByAge' datatype='table' name='[__tableau_internal_object_id__].[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='IncomeByAge' datatype='table' name='[__tableau_internal_object_id__].[IncomeByAge_0EC59378774E41F090944A88F692DB99]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Industry' datatype='table' name='[__tableau_internal_object_id__].[Industry_7244FCCDA22742339F73FC4F0EF71BBA]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Race' datatype='table' name='[__tableau_internal_object_id__].[Race_B5A2441B48A94C799761A5B0F83F3D6D]' role='measure' type='quantitative' />
+      <column-instance column='[Age (IncomeByAge)]' derivation='None' name='[none:Age (IncomeByAge):nk]' pivot='key' type='nominal' />
+      <column-instance column='[Age]' derivation='None' name='[none:Age:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Bachelor&apos;s and Higher]' derivation='Sum' name='[sum:Bachelor&apos;s and Higher:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1982709783346864311]' derivation='Sum' name='[sum:Calculation_1982709783346864311:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1982709783347237048]' derivation='Sum' name='[sum:Calculation_1982709783347237048:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1982709783350137017]' derivation='Sum' name='[sum:Calculation_1982709783350137017:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1982709783350526138]' derivation='Sum' name='[sum:Calculation_1982709783350526138:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1982709783351025851]' derivation='Sum' name='[sum:Calculation_1982709783351025851:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1982709783351345341]' derivation='Sum' name='[sum:Calculation_1982709783351345341:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_666532792301727744]' derivation='User' name='[usr:Calculation_666532792301727744:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Extracts/federated_0zblxle1kq9w7y1701dhm1.hyper' default-settings='yes' schema='Extract' tablename='Extract' update-time='05/28/2021 01:53:18 PM'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='EducationByAge_CF853B7444F24017844E9FEE9D43BA2B' table='[Extract].[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='EducationByAge_CF853B7444F24017844E9FEE9D43BA2B' table='[Extract].[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]' type='table' />
+            <relation name='IncomeByAge_0EC59378774E41F090944A88F692DB99' table='[Extract].[IncomeByAge_0EC59378774E41F090944A88F692DB99]' type='table' />
+            <relation name='Industry_7244FCCDA22742339F73FC4F0EF71BBA' table='[Extract].[Industry_7244FCCDA22742339F73FC4F0EF71BBA]' type='table' />
+            <relation name='Race_B5A2441B48A94C799761A5B0F83F3D6D' table='[Extract].[Race_B5A2441B48A94C799761A5B0F83F3D6D]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[$0 - $10,000]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$0 - $10,000]' />
+            <map key='[$10,000 - $14,999]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$10,000 - $14,999]' />
+            <map key='[$100,000 - $124,999]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$100,000 - $124,999]' />
+            <map key='[$125,000 - $149,999]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$125,000 - $149,999]' />
+            <map key='[$15,000 - $19,999]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$15,000 - $19,999]' />
+            <map key='[$150,000 - $199,999]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$150,000 - $199,999]' />
+            <map key='[$20,000 - $24,999]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$20,000 - $24,999]' />
+            <map key='[$200,000 or more]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$200,000 or more]' />
+            <map key='[$25,000 - $29,999]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$25,000 - $29,999]' />
+            <map key='[$30,000 - $34,999]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$30,000 - $34,999]' />
+            <map key='[$35,000 - $39,999]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$35,000 - $39,999]' />
+            <map key='[$40,000 - $44,999]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$40,000 - $44,999]' />
+            <map key='[$45,000 - $49,999]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$45,000 - $49,999]' />
+            <map key='[$50,000 - $59,999]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$50,000 - $59,999]' />
+            <map key='[$60,000 - $74,999]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$60,000 - $74,999]' />
+            <map key='[$75,000 - $99,999]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[$75,000 - $99,999]' />
+            <map key='[9th to 12th grade, no diploma]' value='[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B].[9th to 12th grade, no diploma]' />
+            <map key='[Admin_Science_Professional Roles]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[Admin_Science_Professional Roles]' />
+            <map key='[African American]' value='[Race_B5A2441B48A94C799761A5B0F83F3D6D].[African American]' />
+            <map key='[Age (IncomeByAge)]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[Age]' />
+            <map key='[Age]' value='[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B].[Age]' />
+            <map key='[Agriculture_forestry_fishing_hunting_mining]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[Agriculture_forestry_fishing_hunting_mining]' />
+            <map key='[Armed Forces]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[Armed Forces]' />
+            <map key='[Asian]' value='[Race_B5A2441B48A94C799761A5B0F83F3D6D].[Asian]' />
+            <map key='[Associate&apos;s degree]' value='[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B].[Associate&apos;s degree]' />
+            <map key='[Bachelor&apos;s and Higher]' value='[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B].[Bachelor&apos;s and Higher]' />
+            <map key='[Bachelor&apos;s degree]' value='[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B].[Bachelor&apos;s degree]' />
+            <map key='[City (IncomeByAge)]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[City]' />
+            <map key='[City (Industry)]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[City]' />
+            <map key='[City (Race)]' value='[Race_B5A2441B48A94C799761A5B0F83F3D6D].[City]' />
+            <map key='[City]' value='[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B].[City]' />
+            <map key='[Construction]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[Construction]' />
+            <map key='[County (IncomeByAge)]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[County]' />
+            <map key='[County (Industry)]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[County]' />
+            <map key='[County (Race)]' value='[Race_B5A2441B48A94C799761A5B0F83F3D6D].[County]' />
+            <map key='[County]' value='[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B].[County]' />
+            <map key='[Education_Health_Social Services]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[Education_Health_Social Services]' />
+            <map key='[Entertainment_Arts_Food Services]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[Entertainment_Arts_Food Services]' />
+            <map key='[Financial Services]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[Financial Services]' />
+            <map key='[Gender]' value='[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B].[Gender]' />
+            <map key='[Graduate or professional degree]' value='[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B].[Graduate or professional degree]' />
+            <map key='[High school graduate]' value='[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B].[High school graduate]' />
+            <map key='[Hispanic or Latino]' value='[Race_B5A2441B48A94C799761A5B0F83F3D6D].[Hispanic or Latino]' />
+            <map key='[Information]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[Information]' />
+            <map key='[Less than 9th grade]' value='[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B].[Less than 9th grade]' />
+            <map key='[Manufacturing]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[Manufacturing]' />
+            <map key='[Native American]' value='[Race_B5A2441B48A94C799761A5B0F83F3D6D].[Native American]' />
+            <map key='[Pacific Islander]' value='[Race_B5A2441B48A94C799761A5B0F83F3D6D].[Pacific Islander]' />
+            <map key='[Population]' value='[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B].[Population]' />
+            <map key='[Public Admin]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[Public Admin]' />
+            <map key='[Retail]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[Retail]' />
+            <map key='[Some college, no degree]' value='[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B].[Some college, no degree]' />
+            <map key='[Total Pop]' value='[Race_B5A2441B48A94C799761A5B0F83F3D6D].[Total Pop]' />
+            <map key='[Transportation_Warehousing_Utilities]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[Transportation_Warehousing_Utilities]' />
+            <map key='[White]' value='[Race_B5A2441B48A94C799761A5B0F83F3D6D].[White]' />
+            <map key='[Wholesale]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[Wholesale]' />
+            <map key='[Zipcode (IncomeByAge)]' value='[IncomeByAge_0EC59378774E41F090944A88F692DB99].[Zipcode]' />
+            <map key='[Zipcode (Industry)]' value='[Industry_7244FCCDA22742339F73FC4F0EF71BBA].[Zipcode]' />
+            <map key='[Zipcode (Race)]' value='[Race_B5A2441B48A94C799761A5B0F83F3D6D].[Zipcode]' />
+            <map key='[Zipcode]' value='[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B].[Zipcode]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='EducationByAge+ (CensusAgeGroup)' increment-value='%null%' refresh-type='create' rows-inserted='21528' timestamp-start='2021-05-28 13:53:18.381' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Zipcode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zipcode]</local-name>
+              <parent-name>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</parent-name>
+              <remote-alias>Zipcode</remote-alias>
+              <ordinal>0</ordinal>
+              <family>EducationByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2304</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>1</ordinal>
+              <family>EducationByAge</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1883</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County]</local-name>
+              <parent-name>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>2</ordinal>
+              <family>EducationByAge</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>3</ordinal>
+              <family>EducationByAge</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>4</ordinal>
+              <family>EducationByAge</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Less than 9th grade</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Less than 9th grade]</local-name>
+              <parent-name>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</parent-name>
+              <remote-alias>Less than 9th grade</remote-alias>
+              <ordinal>5</ordinal>
+              <family>EducationByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>509</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>9th to 12th grade, no diploma</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[9th to 12th grade, no diploma]</local-name>
+              <parent-name>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</parent-name>
+              <remote-alias>9th to 12th grade, no diploma</remote-alias>
+              <ordinal>6</ordinal>
+              <family>EducationByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>638</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>High school graduate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[High school graduate]</local-name>
+              <parent-name>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</parent-name>
+              <remote-alias>High school graduate</remote-alias>
+              <ordinal>7</ordinal>
+              <family>EducationByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1229</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Some college, no degree</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Some college, no degree]</local-name>
+              <parent-name>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</parent-name>
+              <remote-alias>Some college, no degree</remote-alias>
+              <ordinal>8</ordinal>
+              <family>EducationByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>954</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Associate&apos;s degree</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Associate&apos;s degree]</local-name>
+              <parent-name>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</parent-name>
+              <remote-alias>Associate&apos;s degree</remote-alias>
+              <ordinal>9</ordinal>
+              <family>EducationByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>734</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bachelor&apos;s degree</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Bachelor&apos;s degree]</local-name>
+              <parent-name>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</parent-name>
+              <remote-alias>Bachelor&apos;s degree</remote-alias>
+              <ordinal>10</ordinal>
+              <family>EducationByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1077</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Graduate or professional degree</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Graduate or professional degree]</local-name>
+              <parent-name>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</parent-name>
+              <remote-alias>Graduate or professional degree</remote-alias>
+              <ordinal>11</ordinal>
+              <family>EducationByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>893</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bachelor&apos;s and Higher</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Bachelor&apos;s and Higher]</local-name>
+              <parent-name>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</parent-name>
+              <remote-alias>Bachelor&apos;s and Higher</remote-alias>
+              <ordinal>12</ordinal>
+              <family>EducationByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1286</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>13</ordinal>
+              <family>EducationByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1963</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zipcode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zipcode (IncomeByAge)]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>Zipcode</remote-alias>
+              <ordinal>14</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2006</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City (IncomeByAge)]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>15</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1711</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County (IncomeByAge)]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>16</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Age (IncomeByAge)]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>17</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$0 - $10,000</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$0 - $10,000]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$0 - $10,000</remote-alias>
+              <ordinal>18</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>439</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$10,000 - $14,999</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$10,000 - $14,999]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$10,000 - $14,999</remote-alias>
+              <ordinal>19</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>364</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$15,000 - $19,999</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$15,000 - $19,999]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$15,000 - $19,999</remote-alias>
+              <ordinal>20</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>379</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$20,000 - $24,999</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$20,000 - $24,999]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$20,000 - $24,999</remote-alias>
+              <ordinal>21</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>354</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$25,000 - $29,999</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$25,000 - $29,999]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$25,000 - $29,999</remote-alias>
+              <ordinal>22</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>328</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$30,000 - $34,999</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$30,000 - $34,999]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$30,000 - $34,999</remote-alias>
+              <ordinal>23</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>342</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$35,000 - $39,999</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$35,000 - $39,999]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$35,000 - $39,999</remote-alias>
+              <ordinal>24</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>324</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$40,000 - $44,999</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$40,000 - $44,999]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$40,000 - $44,999</remote-alias>
+              <ordinal>25</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>337</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$45,000 - $49,999</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$45,000 - $49,999]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$45,000 - $49,999</remote-alias>
+              <ordinal>26</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>318</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$50,000 - $59,999</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$50,000 - $59,999]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$50,000 - $59,999</remote-alias>
+              <ordinal>27</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>492</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$60,000 - $74,999</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$60,000 - $74,999]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$60,000 - $74,999</remote-alias>
+              <ordinal>28</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>497</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$75,000 - $99,999</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$75,000 - $99,999]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$75,000 - $99,999</remote-alias>
+              <ordinal>29</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>627</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$100,000 - $124,999</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$100,000 - $124,999]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$100,000 - $124,999</remote-alias>
+              <ordinal>30</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>548</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$125,000 - $149,999</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$125,000 - $149,999]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$125,000 - $149,999</remote-alias>
+              <ordinal>31</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>478</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$150,000 - $199,999</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$150,000 - $199,999]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$150,000 - $199,999</remote-alias>
+              <ordinal>32</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>512</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>$200,000 or more</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[$200,000 or more]</local-name>
+              <parent-name>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</parent-name>
+              <remote-alias>$200,000 or more</remote-alias>
+              <ordinal>33</ordinal>
+              <family>IncomeByAge</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>583</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IncomeByAge_0EC59378774E41F090944A88F692DB99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zipcode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zipcode (Industry)]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>Zipcode</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Industry</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1794</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City (Industry)]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Industry</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1233</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County (Industry)]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>36</ordinal>
+              <family>Industry</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Agriculture_forestry_fishing_hunting_mining</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Agriculture_forestry_fishing_hunting_mining]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>Agriculture_forestry_fishing_hunting_mining</remote-alias>
+              <ordinal>37</ordinal>
+              <family>Industry</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>158</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Construction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Construction]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>Construction</remote-alias>
+              <ordinal>38</ordinal>
+              <family>Industry</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>568</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Manufacturing</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Manufacturing]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>Manufacturing</remote-alias>
+              <ordinal>39</ordinal>
+              <family>Industry</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>626</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Wholesale</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Wholesale]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>Wholesale</remote-alias>
+              <ordinal>40</ordinal>
+              <family>Industry</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>382</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Retail</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Retail]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>Retail</remote-alias>
+              <ordinal>41</ordinal>
+              <family>Industry</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>695</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transportation_Warehousing_Utilities</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Transportation_Warehousing_Utilities]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>Transportation_Warehousing_Utilities</remote-alias>
+              <ordinal>42</ordinal>
+              <family>Industry</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>510</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Information</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Information]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>Information</remote-alias>
+              <ordinal>43</ordinal>
+              <family>Industry</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>392</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Financial Services</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Financial Services]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>Financial Services</remote-alias>
+              <ordinal>44</ordinal>
+              <family>Industry</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>586</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Admin_Science_Professional Roles</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Admin_Science_Professional Roles]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>Admin_Science_Professional Roles</remote-alias>
+              <ordinal>45</ordinal>
+              <family>Industry</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>664</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education_Health_Social Services</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Education_Health_Social Services]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>Education_Health_Social Services</remote-alias>
+              <ordinal>46</ordinal>
+              <family>Industry</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>928</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Entertainment_Arts_Food Services</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Entertainment_Arts_Food Services]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>Entertainment_Arts_Food Services</remote-alias>
+              <ordinal>47</ordinal>
+              <family>Industry</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>639</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Public Admin</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Public Admin]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>Public Admin</remote-alias>
+              <ordinal>48</ordinal>
+              <family>Industry</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>539</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Armed Forces</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Armed Forces]</local-name>
+              <parent-name>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</parent-name>
+              <remote-alias>Armed Forces</remote-alias>
+              <ordinal>49</ordinal>
+              <family>Industry</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>90</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Industry_7244FCCDA22742339F73FC4F0EF71BBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zipcode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zipcode (Race)]</local-name>
+              <parent-name>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</parent-name>
+              <remote-alias>Zipcode</remote-alias>
+              <ordinal>50</ordinal>
+              <family>Race</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1794</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City (Race)]</local-name>
+              <parent-name>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>51</ordinal>
+              <family>Race</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1236</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County (Race)]</local-name>
+              <parent-name>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>52</ordinal>
+              <family>Race</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Pop</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Pop]</local-name>
+              <parent-name>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</parent-name>
+              <remote-alias>Total Pop</remote-alias>
+              <ordinal>53</ordinal>
+              <family>Race</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1287</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>White</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[White]</local-name>
+              <parent-name>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</parent-name>
+              <remote-alias>White</remote-alias>
+              <ordinal>54</ordinal>
+              <family>Race</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1275</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>African American</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[African American]</local-name>
+              <parent-name>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</parent-name>
+              <remote-alias>African American</remote-alias>
+              <ordinal>55</ordinal>
+              <family>Race</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>586</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Native American</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Native American]</local-name>
+              <parent-name>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</parent-name>
+              <remote-alias>Native American</remote-alias>
+              <ordinal>56</ordinal>
+              <family>Race</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>207</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Asian</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Asian]</local-name>
+              <parent-name>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</parent-name>
+              <remote-alias>Asian</remote-alias>
+              <ordinal>57</ordinal>
+              <family>Race</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>510</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pacific Islander</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pacific Islander]</local-name>
+              <parent-name>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</parent-name>
+              <remote-alias>Pacific Islander</remote-alias>
+              <ordinal>58</ordinal>
+              <family>Race</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>73</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hispanic or Latino</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hispanic or Latino]</local-name>
+              <parent-name>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</parent-name>
+              <remote-alias>Hispanic or Latino</remote-alias>
+              <ordinal>59</ordinal>
+              <family>Race</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>701</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Race_B5A2441B48A94C799761A5B0F83F3D6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Age (IncomeByAge):nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;25 – 44&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;65 and over&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Under 25&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;45 – 64&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Age (IncomeByAge):nk]&#10;[:Measure Names]' type='palette'>
+            <map to='#358ead'>
+              <multibucket>
+                <bucket>&quot;65 and over&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351345341:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;25 – 44&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351345341:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#66b3c2'>
+              <multibucket>
+                <bucket>&quot;65 and over&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351025851:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#6793bc'>
+              <multibucket>
+                <bucket>&quot;25 – 44&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351025851:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#767f8b'>
+              <multibucket>
+                <bucket>&quot;Under 25&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351025851:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#79706e'>
+              <multibucket>
+                <bucket>&quot;Under 25&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350526138:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#83afd2'>
+              <multibucket>
+                <bucket>&quot;25 – 44&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350137017:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#989ca3'>
+              <multibucket>
+                <bucket>&quot;Under 25&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350137017:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#a0cbe8'>
+              <multibucket>
+                <bucket>&quot;25 – 44&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350526138:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#a1d5d2'>
+              <multibucket>
+                <bucket>&quot;65 and over&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350137017:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#bab0ac'>
+              <multibucket>
+                <bucket>&quot;Under 25&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351345341:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#bce4d8'>
+              <multibucket>
+                <bucket>&quot;65 and over&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350526138:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;45 – 64&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351345341:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f79e47'>
+              <multibucket>
+                <bucket>&quot;45 – 64&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351025851:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#fbae62'>
+              <multibucket>
+                <bucket>&quot;45 – 64&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350137017:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ffbe7d'>
+              <multibucket>
+                <bucket>&quot;45 – 64&quot;</bucket>
+                <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350526138:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Age:nk]' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;65 and over&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;25 – 44&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;45 – 64&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351345341:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783346864311:qk]&quot;</bucket>
+            </map>
+            <map to='#5485b2'>
+              <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351025851:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Bachelor&apos;s and Higher:qk]&quot;</bucket>
+            </map>
+            <map to='#92c0df'>
+              <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350526138:qk]&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350137017:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783347237048:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[usr:Calculation_666532792301727744:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='EducationByAge' id='EducationByAge_CF853B7444F24017844E9FEE9D43BA2B'>
+            <properties context=''>
+              <relation connection='excel-direct.1vz9ttb1a7u1k31fz30ns14zsuan' name='EducationByAge' table='[EducationByAge$]' type='table'>
+                <columns gridOrigin='A1:N10001:no:A1:N10001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Zipcode' ordinal='0' />
+                  <column datatype='string' name='City' ordinal='1' />
+                  <column datatype='string' name='County' ordinal='2' />
+                  <column datatype='string' name='Gender' ordinal='3' />
+                  <column datatype='string' name='Age' ordinal='4' />
+                  <column datatype='integer' name='Less than 9th grade' ordinal='5' />
+                  <column datatype='integer' name='9th to 12th grade, no diploma' ordinal='6' />
+                  <column datatype='integer' name='High school graduate' ordinal='7' />
+                  <column datatype='integer' name='Some college, no degree' ordinal='8' />
+                  <column datatype='integer' name='Associate&apos;s degree' ordinal='9' />
+                  <column datatype='integer' name='Bachelor&apos;s degree' ordinal='10' />
+                  <column datatype='integer' name='Graduate or professional degree' ordinal='11' />
+                  <column datatype='integer' name='Bachelor&apos;s and Higher' ordinal='12' />
+                  <column datatype='integer' name='Population' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='EducationByAge_CF853B7444F24017844E9FEE9D43BA2B' table='[Extract].[EducationByAge_CF853B7444F24017844E9FEE9D43BA2B]' type='table' />
+            </properties>
+          </object>
+          <object caption='IncomeByAge' id='IncomeByAge_0EC59378774E41F090944A88F692DB99'>
+            <properties context=''>
+              <relation connection='excel-direct.1vz9ttb1a7u1k31fz30ns14zsuan' name='IncomeByAge' table='[IncomeByAge$]' type='table'>
+                <columns gridOrigin='A1:T7177:no:A1:T7177:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Zipcode' ordinal='0' />
+                  <column datatype='string' name='City' ordinal='1' />
+                  <column datatype='string' name='County' ordinal='2' />
+                  <column datatype='string' name='Age' ordinal='3' />
+                  <column datatype='integer' name='$0 - $10,000' ordinal='4' />
+                  <column datatype='integer' name='$10,000 - $14,999' ordinal='5' />
+                  <column datatype='integer' name='$15,000 - $19,999' ordinal='6' />
+                  <column datatype='integer' name='$20,000 - $24,999' ordinal='7' />
+                  <column datatype='integer' name='$25,000 - $29,999' ordinal='8' />
+                  <column datatype='integer' name='$30,000 - $34,999' ordinal='9' />
+                  <column datatype='integer' name='$35,000 - $39,999' ordinal='10' />
+                  <column datatype='integer' name='$40,000 - $44,999' ordinal='11' />
+                  <column datatype='integer' name='$45,000 - $49,999' ordinal='12' />
+                  <column datatype='integer' name='$50,000 - $59,999' ordinal='13' />
+                  <column datatype='integer' name='$60,000 - $74,999' ordinal='14' />
+                  <column datatype='integer' name='$75,000 - $99,999' ordinal='15' />
+                  <column datatype='integer' name='$100,000 - $124,999' ordinal='16' />
+                  <column datatype='integer' name='$125,000 - $149,999' ordinal='17' />
+                  <column datatype='integer' name='$150,000 - $199,999' ordinal='18' />
+                  <column datatype='integer' name='$200,000 or more' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='IncomeByAge_0EC59378774E41F090944A88F692DB99' table='[Extract].[IncomeByAge_0EC59378774E41F090944A88F692DB99]' type='table' />
+            </properties>
+          </object>
+          <object caption='Industry' id='Industry_7244FCCDA22742339F73FC4F0EF71BBA'>
+            <properties context=''>
+              <relation connection='excel-direct.1vz9ttb1a7u1k31fz30ns14zsuan' name='Industry' table='[Industry$]' type='table'>
+                <columns gridOrigin='A1:P1795:no:A1:P1795:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Zipcode' ordinal='0' />
+                  <column datatype='string' name='City' ordinal='1' />
+                  <column datatype='string' name='County' ordinal='2' />
+                  <column datatype='integer' name='Agriculture_forestry_fishing_hunting_mining' ordinal='3' />
+                  <column datatype='integer' name='Construction' ordinal='4' />
+                  <column datatype='integer' name='Manufacturing' ordinal='5' />
+                  <column datatype='integer' name='Wholesale' ordinal='6' />
+                  <column datatype='integer' name='Retail' ordinal='7' />
+                  <column datatype='integer' name='Transportation_Warehousing_Utilities' ordinal='8' />
+                  <column datatype='integer' name='Information' ordinal='9' />
+                  <column datatype='integer' name='Financial Services' ordinal='10' />
+                  <column datatype='integer' name='Admin_Science_Professional Roles' ordinal='11' />
+                  <column datatype='integer' name='Education_Health_Social Services' ordinal='12' />
+                  <column datatype='integer' name='Entertainment_Arts_Food Services' ordinal='13' />
+                  <column datatype='integer' name='Public Admin' ordinal='14' />
+                  <column datatype='integer' name='Armed Forces' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Industry_7244FCCDA22742339F73FC4F0EF71BBA' table='[Extract].[Industry_7244FCCDA22742339F73FC4F0EF71BBA]' type='table' />
+            </properties>
+          </object>
+          <object caption='Race' id='Race_B5A2441B48A94C799761A5B0F83F3D6D'>
+            <properties context=''>
+              <relation connection='excel-direct.1vz9ttb1a7u1k31fz30ns14zsuan' name='Race' table='[Race$]' type='table'>
+                <columns gridOrigin='A1:J1795:no:A1:J1795:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Zipcode' ordinal='0' />
+                  <column datatype='string' name='City' ordinal='1' />
+                  <column datatype='string' name='County' ordinal='2' />
+                  <column datatype='integer' name='Total Pop' ordinal='3' />
+                  <column datatype='integer' name='White' ordinal='4' />
+                  <column datatype='integer' name='African American' ordinal='5' />
+                  <column datatype='integer' name='Native American' ordinal='6' />
+                  <column datatype='integer' name='Asian' ordinal='7' />
+                  <column datatype='integer' name='Pacific Islander' ordinal='8' />
+                  <column datatype='integer' name='Hispanic or Latino' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Race_B5A2441B48A94C799761A5B0F83F3D6D' table='[Extract].[Race_B5A2441B48A94C799761A5B0F83F3D6D]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Zipcode]' />
+              <expression op='[Zipcode (IncomeByAge)]' />
+            </expression>
+            <first-end-point object-id='EducationByAge_CF853B7444F24017844E9FEE9D43BA2B' />
+            <second-end-point object-id='IncomeByAge_0EC59378774E41F090944A88F692DB99' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Zipcode (IncomeByAge)]' />
+              <expression op='[Zipcode (Industry)]' />
+            </expression>
+            <first-end-point object-id='IncomeByAge_0EC59378774E41F090944A88F692DB99' />
+            <second-end-point object-id='Industry_7244FCCDA22742339F73FC4F0EF71BBA' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Zipcode (Industry)]' />
+              <expression op='[Zipcode (Race)]' />
+            </expression>
+            <first-end-point object-id='Industry_7244FCCDA22742339F73FC4F0EF71BBA' />
+            <second-end-point object-id='Race_B5A2441B48A94C799761A5B0F83F3D6D' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Education by Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Education By Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://prod-useast-b.online.tableau.com/t/dmz/workbooks/NYTProject528955/EducationbyAge?rev=' id='EducationbyAge' path='/t/dmz/workbooks/NYTProject528955' revision='' site='dmz' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EducationByAge+ (CensusAgeGroup)' name='federated.0zblxle1kq9w7y1701dhm17c72jd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zblxle1kq9w7y1701dhm17c72jd'>
+            <column caption='9Th To 12Th Grade, No Diploma' datatype='integer' name='[9th to 12th grade, no diploma]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Age]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;65 and over&quot;' value='65+' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Associate&apos;s degree]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Bachelor&apos;s and Higher]' role='measure' type='quantitative' />
+            <column caption='No Higher Education' datatype='integer' name='[Calculation_1982709783346864311]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[9th to 12th grade, no diploma] + [High school graduate] + [Less than 9th grade]' />
+            </column>
+            <column caption='Associate&apos;s and Some College' datatype='integer' name='[Calculation_1982709783347237048]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Some college, no degree] + [Associate&apos;s degree]' />
+            </column>
+            <column datatype='integer' name='[High school graduate]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Less than 9th grade]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Some college, no degree]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Bachelor&apos;s and Higher]' derivation='Sum' name='[sum:Bachelor&apos;s and Higher:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1982709783346864311]' derivation='Sum' name='[sum:Calculation_1982709783346864311:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1982709783347237048]' derivation='Sum' name='[sum:Calculation_1982709783347237048:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783347237048:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Bachelor&apos;s and Higher:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783346864311:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[Multiple Values]' scope='rows' value='' />
+            <encoding attr='space' class='0' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[Multiple Values]' field-type='quantitative' major-origin='0.0' major-spacing='1000000.0' scope='rows' type='space' />
+            <format attr='width' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[Multiple Values]' value='32' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]' value='141' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk]' value='false' />
+            <format attr='text-orientation' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]' value='-90' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0zblxle1kq9w7y1701dhm17c72jd].[Multiple Values]</rows>
+        <cols>([federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk] / [federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{0904856F-EAFB-4CAF-B18F-59BC2A9E5480}' />
+    </worksheet>
+    <worksheet name='Gender by Age Group'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Gender Population By Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://prod-useast-b.online.tableau.com/t/dmz/workbooks/NYTProject528955/GenderbyAgeGroup?rev=' id='GenderbyAgeGroup' path='/t/dmz/workbooks/NYTProject528955' revision='' site='dmz' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EducationByAge+ (CensusAgeGroup)' name='federated.0zblxle1kq9w7y1701dhm17c72jd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zblxle1kq9w7y1701dhm17c72jd'>
+            <column datatype='string' name='[Age]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;65 and over&quot;' value='65+' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Population]' derivation='Sum' name='[sum:Population:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='180' />
+            <format attr='width' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk]' value='154' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk]' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Population:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Gender:nk]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Gender:nk]' />
+              <wedge-size column='[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Population:qk]' />
+              <size column='[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Population:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk]</cols>
+      </table>
+      <simple-id uuid='{31C2941D-0B0D-4171-823C-DBABD61A112D}' />
+    </worksheet>
+    <worksheet name='Income by Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Income By Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://prod-useast-b.online.tableau.com/t/dmz/workbooks/NYTProject528955/IncomebyAge?rev=' id='IncomebyAge' path='/t/dmz/workbooks/NYTProject528955' revision='' site='dmz' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EducationByAge+ (CensusAgeGroup)' name='federated.0zblxle1kq9w7y1701dhm17c72jd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zblxle1kq9w7y1701dhm17c72jd'>
+            <column datatype='integer' name='[$0 - $10,000]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[$10,000 - $14,999]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[$100,000 - $124,999]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[$125,000 - $149,999]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[$15,000 - $19,999]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[$150,000 - $199,999]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[$20,000 - $24,999]' role='measure' type='quantitative' />
+            <column caption='$200,000 Or More' datatype='integer' name='[$200,000 or more]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[$25,000 - $29,999]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[$30,000 - $34,999]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[$35,000 - $39,999]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[$40,000 - $44,999]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[$45,000 - $49,999]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[$50,000 - $59,999]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[$60,000 - $74,999]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[$75,000 - $99,999]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Age (IncomeByAge)]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;65 and over&quot;' value='65+' />
+                <alias key='&quot;Under 25&quot;' value='&gt;25' />
+              </aliases>
+            </column>
+            <column caption='Low Income' datatype='integer' name='[Calculation_1982709783350137017]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[$0 - $10,000] + [$10,000 - $14,999] + [$15,000 - $19,999] + [$20,000 - $24,999] + [$25,000 - $29,999] + [$30,000 - $34,999] + [$35,000 - $39,999]' />
+            </column>
+            <column caption='Low Middle Income' datatype='integer' name='[Calculation_1982709783350526138]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[$40,000 - $44,999] + [$45,000 - $49,999] + [$50,000 - $59,999] + [$60,000 - $74,999]' />
+            </column>
+            <column caption='High Middle Income' datatype='integer' name='[Calculation_1982709783351025851]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[$75,000 - $99,999] + [$100,000 - $124,999]' />
+            </column>
+            <column caption='High Income' datatype='integer' name='[Calculation_1982709783351345341]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[$125,000 - $149,999] + [$150,000 - $199,999] + [$200,000 or more]' />
+            </column>
+            <column-instance column='[Age (IncomeByAge)]' derivation='None' name='[none:Age (IncomeByAge):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1982709783350137017]' derivation='Sum' name='[sum:Calculation_1982709783350137017:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1982709783350526138]' derivation='Sum' name='[sum:Calculation_1982709783350526138:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1982709783351025851]' derivation='Sum' name='[sum:Calculation_1982709783351025851:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1982709783351345341]' derivation='Sum' name='[sum:Calculation_1982709783351345341:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351345341:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351025851:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350137017:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350526138:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351345341:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783351025851:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350526138:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783350137017:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age (IncomeByAge):nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age (IncomeByAge):nk]' />
+              <groupfilter function='member' level='[none:Age (IncomeByAge):nk]' member='&quot;Under 25&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age (IncomeByAge):nk]</column>
+            <column>[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[Multiple Values]' scope='rows' value='' />
+            <encoding attr='space' class='0' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[Multiple Values]' field-type='quantitative' major-origin='0.0' major-spacing='300000.0' scope='rows' type='space' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age (IncomeByAge):nk]' value='0' />
+            <format attr='text-orientation' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]' value='-90' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0zblxle1kq9w7y1701dhm17c72jd].[Multiple Values]</rows>
+        <cols>([federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age (IncomeByAge):nk] / [federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{EF7FF2E9-96F7-45E4-811C-76A3EAD66B40}' />
+    </worksheet>
+    <worksheet name='Population by Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Population By Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://prod-useast-b.online.tableau.com/t/dmz/workbooks/NYTProject528955/PopulationbyAge?rev=' id='PopulationbyAge' path='/t/dmz/workbooks/NYTProject528955' revision='' site='dmz' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EducationByAge+ (CensusAgeGroup)' name='federated.0zblxle1kq9w7y1701dhm17c72jd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zblxle1kq9w7y1701dhm17c72jd'>
+            <column datatype='string' name='[Age]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;65 and over&quot;' value='65+' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Population]' derivation='Sum' name='[sum:Population:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Population:qk]' scope='rows' value='' />
+            <encoding attr='space' class='0' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Population:qk]' field-type='quantitative' major-origin='0' major-spacing='2000000' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk]' value='Age' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Population:qk]</rows>
+        <cols>[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk]</cols>
+      </table>
+      <simple-id uuid='{D1867D53-4DD9-4ADF-BA49-19804B2094F5}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <repository-location derived-from='https://prod-useast-b.online.tableau.com/t/dmz/workbooks/NYTProject528955/Sheet6?rev=' id='Sheet6' path='/t/dmz/workbooks/NYTProject528955' revision='' site='dmz' />
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5D958E80-FD6C-4FE8-8AC7-6BB1F8F76480}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 2'>
+      <repository-location derived-from='https://prod-useast-b.online.tableau.com/t/dmz/workbooks/NYTProject528955/Dashboard2?rev=' id='Dashboard2' path='/t/dmz/workbooks/NYTProject528955' revision='' site='dmz' />
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='vertical-align' id='dash-text_12' value='center' />
+          <format attr='text-orientation' id='dash-text_12' value='90' />
+          <format attr='text-orientation' id='dash-text_13' value='90' />
+          <format attr='text-orientation' id='dash-text_23' value='-90' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='14286' id='4' w='31563' x='785' y='1742'>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Copperplate Gothic Bold' fontsize='24'>Understand Your Audience</run>
+          </formatted-text>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#186c8b' />
+          </zone-style>
+        </zone>
+        <zone h='54007' id='5' name='Population by Age' show-title='false' w='25951' x='5311' y='22997'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#e6e6e6' />
+          </zone-style>
+        </zone>
+        <zone h='24158' id='6' name='Gender by Age Group' show-title='false' w='28183' x='5069' y='77352' />
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='6039' id='7' leg-item-layout='horz' leg-item-order='normal' name='Gender by Age Group' pane-specification-id='0' param='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Gender:nk]' w='16355' x='12311' y='91405' />
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='14286' id='8' w='66506' x='32287' y='1742'>
+          <formatted-text>
+            <run fontcolor='#ffffff' fontsize='16'>New York is home to </run>
+            <run bold='true' fontcolor='#ffffff' fontsize='16'>20.9 million</run>
+            <run fontcolor='#ffffff' fontsize='16'> residents. In order to serve them, you must first understand this group diverse individuals. </run>
+          </formatted-text>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#186c8b' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='6039' id='10' w='16596' x='11949' y='17189'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>Age Breakdown</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='6039' id='17' w='20217' x='56186' y='16609'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>Education Levels By Age</run>
+          </formatted-text>
+        </zone>
+        <zone h='75029' id='23' name='Education by Age' show-title='false' w='59928' x='38141' y='22300' />
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10337' id='24' name='Population by Age' pane-specification-id='0' param='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk]' w='6337' x='29511' y='25087' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='33' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='32' param='vert' w='84000' x='8000' y='8000'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='14286' id='4' w='31563' x='785' y='1742'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#ffffff' fontname='Copperplate Gothic Bold' fontsize='24'>Understand Your Audience</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#186c8b' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='14286' id='8' w='66506' x='32287' y='1742'>
+                  <formatted-text>
+                    <run fontcolor='#ffffff' fontsize='16'>New York is home to </run>
+                    <run bold='true' fontcolor='#ffffff' fontsize='16'>20.9 million</run>
+                    <run fontcolor='#ffffff' fontsize='16'> residents. In order to serve them, you must first understand this group diverse individuals. </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#186c8b' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='6039' id='17' w='20217' x='56186' y='16609'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='14'>Education Levels By Age</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='6039' id='10' w='16596' x='11949' y='17189'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='14'>Age Breakdown</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='75029' id='23' is-fixed='true' name='Education by Age' show-title='false' w='59928' x='38141' y='22300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54007' id='5' is-fixed='true' name='Population by Age' show-title='false' w='25951' x='5311' y='22997'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e6' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10337' id='24' name='Population by Age' pane-specification-id='0' param='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk]' w='6337' x='29511' y='25087'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='193' h='24158' id='6' is-fixed='true' name='Gender by Age Group' show-title='false' w='28183' x='5069' y='77352'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='6039' id='7' leg-item-layout='horz' leg-item-order='normal' name='Gender by Age Group' pane-specification-id='0' param='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Gender:nk]' w='16355' x='12311' y='91405'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E768B430-752C-477B-9444-4D59F852724A}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' maximized='true' name='Population by Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:City:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C5131A21-4EF9-499B-82C0-C02BB48EDD4A}' />
+    </window>
+    <window class='worksheet' name='Gender by Age Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Gender:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Population:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk]</field>
+            <field>[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7631328C-34EE-4D0F-A3F8-08AA67288B3B}' />
+    </window>
+    <window class='worksheet' name='Education by Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]</field>
+            <field>[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{57A8D077-F55A-44BE-B2FA-E7CACE613AE7}' />
+    </window>
+    <window class='worksheet' name='Income by Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]</field>
+            <field>[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age (IncomeByAge):nk]</field>
+            <field>[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Gender:nk]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{50721F93-DF7F-4606-96D1-D0506DB38476}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Education by Age'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <node-selection select-tuples='false'>
+              <oriented-node-reference orientation='horizontal'>
+                <node-reference>
+                  <fields>
+                    <field>[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk]</field>
+                    <field>[federated.0zblxle1kq9w7y1701dhm17c72jd].[:Measure Names]</field>
+                  </fields>
+                  <multibucket>
+                    <bucket>&quot;25 – 44&quot;</bucket>
+                    <bucket>&quot;[federated.0zblxle1kq9w7y1701dhm17c72jd].[sum:Calculation_1982709783346864311:qk]&quot;</bucket>
+                  </multibucket>
+                </node-reference>
+                <page-reference />
+              </oriented-node-reference>
+            </node-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Gender by Age Group'>
+          <highlight field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Gender:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Population by Age'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0zblxle1kq9w7y1701dhm17c72jd].[none:Age:nk]'>
+            <bucket-selection />
+          </highlight>
+          <floating-toolbar-visibility value='2' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{81EF234E-4729-42CE-A487-86936C780C0C}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D530F33C-A996-4D89-B5CA-B4D2C87B9044}' />
+    </window>
+  </windows>
+</workbook>
