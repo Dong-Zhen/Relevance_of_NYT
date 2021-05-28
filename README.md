@@ -52,9 +52,11 @@ I used aggregate functions, vlookups, and pivot tables to clean and explore my d
 
 ## Tools
 
-I used Python to scrape location data and to call the Census Api. Excel to clean, manipulate, and perform analysis on the data. Tableau to visualize and map the data. 
+I used Python to scrape location data and call the Census Api. Excel to clean, manipulate, and perform analysis on the data. Tableau to visualize and map the data. 
 
 ## Communication
+
+I will be pitching to the New York Time's marketing team.
 
 ## Links
 
