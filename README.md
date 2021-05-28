@@ -7,29 +7,29 @@ After analyzing data from the 5 year American Community Survey for 2009 - 2019, 
 
 ## Design
 
-Impact Hypothesis: By understanding the demographics and social characteristics of New Yorkers 25 and older, the New York Times can implement personalized outreach campaigns to target groups who are likely to subscribe in order to increase readership in the New York column.
+### Impact Hypothesis: By understanding the demographics and social characteristics of New Yorkers 25 and older, the New York Times can implement personalized outreach campaigns to target groups who are likely to subscribe in order to increase readership in the New York column.
 
-Additional Impacts:
+### Additional Impacts:
 
 - Readers read other columns as well, increasing the columns' engagement metrics
 - Increase in subscribers 
 - Advertisers pay more to reach specific groups
 
-Ways the Hypothesis Could Fail: 
+### Ways the Hypothesis Could Fail: 
 
 - New Yorkers are not interested in the New York column's content
 - Likely to subscribe does not equal higher readership, target group might subscribe to other newspapers as well
 
-Solution Path: Build a logistic regression model trained on New York Time's subscriber data and then test on Census demographic information to identify Which New Yorkers are likely to be subscribers and who is not.
+### Solution Path: Build a logistic regression model trained on New York Time's subscriber data and then test on Census demographic information to identify Which New Yorkers are likely to be subscribers and who is not.
 
 The model should be deployed the next quarter to see if it helped add more New York subscribers than the previous quarter. 
 
-Acceptable Risks: 
+### Acceptable Risks: 
 
 - If the model classifies a likely subscriber as an unlikely subscriber 5% of the time. This can be mitigated by looking into why it is predicting wrong for this 5%, maybe there was a missing feature.
 - If the model classifies an unlikey subscriber as a likely subscriber 5% of the time. 
 
-Alternative Solution: Use clustering to learn more about New York's subscriber group.
+### Alternative Solution: Use clustering to learn more about New York's subscriber group.
 
 There are some ethical issues that can occur. If the model identifies likely subscribers based on high income and education, then there is a design bias. This can be mitigated by looking into features of readers who are interested in the content. There's the issue of consent, do subscribers know their data is being used to identify other likely subscribers?
 
