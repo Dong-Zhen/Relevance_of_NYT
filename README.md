@@ -46,7 +46,7 @@ From there, I created three major adult age groups based on the Milennial, X, an
 
 ## Alogirthms
 
-I used aggregate functions, vlookups, and pivot tables to clean and explore my data on excel. 
+I used aggregate functions, vlookups, and pivot tables to clean and explore my data on excel. I created calculated fields in Tableau to represent income and education levels. 
 
 ## Tools
 
