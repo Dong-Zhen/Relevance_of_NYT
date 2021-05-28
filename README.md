@@ -63,3 +63,4 @@ I will be pitching to the New York Time's marketing team.
 - [Write up](https://github.com/Dong-Zhen/Relevance_of_NYT/edit/main/README.md)
 - [Census Analysis on Google Sheets](https://docs.google.com/spreadsheets/d/1sxYRCKuNiGMVjmg1CprcZR_FmU6XC8IkZECXanqWy3o/edit?usp=sharing)
 - [Tableau Workbook](https://github.com/Dong-Zhen/Relevance_of_NYT/blob/main/Tableau/CensusDashboard.twb)
+- [Powerpoint](https://github.com/Dong-Zhen/Relevance_of_NYT/blob/main/New%20York%20Times%20Opportunity.pdf)
